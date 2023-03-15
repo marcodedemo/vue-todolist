@@ -59,16 +59,51 @@ createApp({
 
         ],
 
+        
+        newTodoText:"",
+
+
+
     }
 
   },
 
   methods: {
 
+    // rimuovi todo
     removeTodo(todoIndex){
         
         this.todos.splice(todoIndex,1);
     },
+
+
+    // aggiungo un oggetto da inserire alla lista todo
+    addTodo(){
+
+        // la funzione viene eseguita solo se viene inserito qualcosa nel campo di input
+        if(!(this.newTodoText =="")){
+
+            // dichiaro un nuovo oggetto
+            let newTodo = {
+                
+                text:"",
+                done: false,
+            };
+            
+            // imposto il testo dell'oggetto uguale a quello ricavato dall'input
+            newTodo.text = this.newTodoText;
+            
+            // inserisco il nuovo oggetto nell'array
+            this.todos.push(newTodo);
+            
+            // rimuovo il testo nell'input
+            this.newTodoText = "";
+
+        }
+
+    },
+
+
 
   }
 

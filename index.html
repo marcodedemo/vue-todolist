@@ -33,6 +33,13 @@
                 </li>
             </ul>
             
+            <!-- inputs -->
+            <div id="inputs">
+
+                <input type="text" v-model="newTodoText" @keyup.enter="addTodo()">
+                <button @click="addTodo()">Aggiungi Todo</button>
+
+            </div>
         </div>
         
         
