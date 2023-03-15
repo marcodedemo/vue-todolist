@@ -65,6 +65,10 @@ createApp({
 
   methods: {
 
+    removeTodo(todoIndex){
+        
+        this.todos.splice(todoIndex,1);
+    },
 
   }
 

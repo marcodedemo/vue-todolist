@@ -26,7 +26,11 @@
             <h1>ToDo List:</h1>
 
             <ul id="todo-list">
-                <li v-for="todo in todos" :style="todo.done ? {textDecoration:'line-through' } : ''"> {{todo.text}} <i class="fa-solid fa-xmark"></i></li>
+
+                <li v-for="(todo,index) in todos" :style="todo.done ? {textDecoration:'line-through' } : ''">
+                    {{todo.text}} <i class="fa-solid fa-xmark" @click="removeTodo(index)"></i>
+
+                </li>
             </ul>
             
         </div>
