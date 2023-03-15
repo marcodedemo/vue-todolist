@@ -103,6 +103,15 @@ createApp({
 
     },
 
+    toggleDone(todoIndex){
+        
+        if(this.todos[todoIndex].done){
+            this.todos[todoIndex].done = false;
+        }else{
+            this.todos[todoIndex].done = true;
+        }
+    }
+
 
 
   }
