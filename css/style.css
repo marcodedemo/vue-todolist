@@ -4,3 +4,43 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+h1{
+    padding: 20px 0;
+
+    text-align: center;
+}
+
+
+#todo-list{
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+#todo-list li{
+    line-height: 1.5em;
+}
+
+i.fa-solid{
+    color: red;
+    
+    padding-left: 4px;
+
+    font-size: 1.2em;
+}

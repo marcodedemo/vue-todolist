@@ -23,6 +23,42 @@ createApp({
 
     return {
 
+        todos: [
+            {
+                text: "Andare a fare la spesa",
+                done: true,
+            },
+            {
+                text: "Portare fuori il cane",
+                done: true,
+            },
+            {
+                text: "Fare l'esercizio di oggi",
+                done: false,
+            },
+            {
+                text: "Andare in palestra",
+                done: false,
+            },
+            {
+                text: "Stendere i panni",
+                done: true,
+            },
+            {
+                text: "Bere tanta acqua",
+                done: false,
+            },
+            {
+                text: "Pagare l'assicurazione della macchina",
+                done: false,
+            },
+            {
+                text: "Chiedere un prestito per pagare l'assicurazione della macchina",
+                done: false,
+            },
+
+        ],
+
     }
 
   },
